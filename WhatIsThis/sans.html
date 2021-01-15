@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHAT?</title>
+    <style>
+        body{
+            background: #141E30;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #243B55, #141E30);
+            overflow: hidden;
+        }
+        .time{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            font-size: 100px;
+            color: #F9F7E8; 
+            font-weight: bold;
+            text-shadow: 7px 7px 0px rgb(22, 22, 22);
+        }
+        .btn{
+            font-family: 'Noto Sans KR', sans-serif;
+            background: #F9F7E8;
+            color: #243B55;
+            font-size: 30px;
+            border-radius: 40px;
+            border: none;
+            padding: 15px 60px;
+            box-shadow: 0px 5px 1px rgb(32, 32, 32);
+        }
+        .btn:hover{
+            font-family: 'Noto Sans KR', sans-serif;
+            background: #243B55;
+            color: #F9F7E8;
+            font-size: 30px;
+            border-radius: 40px;
+            border: none;
+            padding: 15px 60px;
+            box-shadow: 0px 5px 1px rgb(32, 32, 32);
+        }
+    </style>
+</head>
+<body>
+    <div class="time">
+        <p id="text">이 버튼은 뭐야?</p>
+        <button class="btn">?</button>
+    </div>
+
+    <script>
+        const btn = document.querySelector(".btn");
+        var sans = new Audio('SansNoise.mp3');
+        btn.addEventListener('click', function() {
+            document.getElementById("text").innerHTML="Do you wanna have a bad time?"
+            badTime();
+        });
+        function badTime(){
+            sans.play();
+            setInterval(function(){
+            window.location.href="../stage3/timeS3.html";
+        }, 3500)
+    }
+    </script>
+</body>
+</html>

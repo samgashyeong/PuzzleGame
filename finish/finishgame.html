@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image⁄x-icon" href="../icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you.</title>
+    <style>
+        body{
+            background: #141E30;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #243B55, #141E30);
+            overflow: hidden;
+        }
+        .time{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            text-shadow: 0px 5px 10px rgb(37, 60, 63);
+        }
+        h1{
+            color: #fff;
+            text-shadow: 0px 5px 10px rgb(188, 193, 194);
+            font-size: 80px;
+        }
+        p{
+            color: #fff;
+            text-shadow: 0px 5px 10px rgb(188, 193, 194);
+            font-size: 30px;
+        }
+    </style>
+
+    <script>
+        var audio = new Audio('music.wav');
+
+        var timer2 = setInterval(function(){
+            audio.play();
+        }, 100)
+    </script>
+</head>
+<body>
+    <div class="time">
+        <h1>축하합니다!!</h1>
+        <p>MADE BY. 이준상 이창학</p>
+    </div>
+</body>
+</html>

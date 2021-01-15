@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image⁄x-icon" href="../icon.png">
+    <title>제한 시간</title>
+    <style>
+        body{
+            background: #141E30;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #243B55, #141E30);
+            overflow: hidden;
+        }
+        .time{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            font-size: 100px;
+            color: #F9F7E8; 
+            font-weight: bold;
+            text-shadow: 7px 7px 0px rgb(22, 22, 22);
+        }
+    </style>
+</head>
+<body>
+    <div class="time">
+        <p>제한시간 120초</p>
+    </div>
+
+    <script>
+        
+        var timer1 = setInterval(function(){
+            transform();
+        }, 1500)
+        function transform(){
+            window.location.href="stage3.html";
+        }
+    </script>
+</body>
+</html>

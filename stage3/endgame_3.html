@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>헉 이걸 못 깨?</title>
+    <link rel="shortcut icon" type="image⁄x-icon" href="../icon.png">
+    <link rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* 백그라운드 */
+    *{
+    margin: 0;
+    padding: 0;
+    background-size: 1350px 700px;
+    overflow: hidden;
+    }
+
+    body{
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30);
+    }
+    .rebtn{
+        font-family: 'Noto Sans KR', sans-serif;
+            background: #F9F7E8;
+            color: #00102c;
+            font-size: 30px;
+            border-radius: 40px;
+            border: none;
+            padding: 15px 60px;
+            box-shadow: 0px 5px 1px rgb(32, 32, 32);
+    }
+    .rebtn:hover{
+        font-family: 'Noto Sans KR', sans-serif;
+        background: rgb(0, 16, 44);
+        color: #F9F7E8;
+        font-size: 30px;
+        border-radius: 40px;
+        border: none;
+        padding: 15px 60px;
+        box-shadow: 0px 5px 1px rgb(32, 32, 32);
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        font-size: 60px;
+        margin-bottom: 60px;
+    }
+    h1{
+        text-align: center;
+        min-height: 30px;
+        color: #F9F7E8;
+        text-shadow: 7px 7px 0px rgb(22, 22, 22);
+        margin: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <h1>다시 돌아와라...ㅋ</h1>
+        <button class="rebtn" onclick="rebtn()">다시하기</button>
+    </div>
+    <script>
+        function rebtn(){
+            window.location.href="../stage1/timeS1.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* 백그라운드 */
+*{
+    margin: 0;
+    padding: 0;
+    background-size: 1350px 700px;
+    overflow: hidden;
+    min-height: 100px;
+}
+body{
+    background: #50C9C3;
+    background: -webkit-linear-gradient(to left, #8adfda, #50C9C3);
+    background: linear-gradient(to left, #8adfda, #50C9C3);
+}
+
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 타이머 */
+.play_time{
+    font-size: 50px;
+    margin-top: 80px;
+    color:#fff;
+    font-weight: bold;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-shadow: 0px 5px 10px rgb(37, 60, 63);
+}
+
+.stage{
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+    text-shadow: 0px 5px 10px rgb(37, 60, 63);
+}
+
+ul{
+    margin-top: 10px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 20px;
+    border: 10px solid rgb(238, 243, 242);
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px rgb(37, 60, 63);
+}
+
+/* 사진 스타일 */
+li{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border: 1px solid #fff;
+    color: #fff;
+    background: url(stage2.jpg);
+}
+
+/* 시작 버튼 */
+.btn{
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #F9F7E8;
+    color: #61BFAD;
+    font-size: 30px;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 60px;
+    box-shadow: 0px 5px 10px rgb(37, 60, 63);
+    display: none;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.btn:hover{
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #61BFAD;
+    color: #F9F7E8;
+    font-size: 30px;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 60px;
+    box-shadow: 0px 5px 10px rgb(37, 60, 63);
+    display: none;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* 힌트보기 버튼 */
+
+
+
+/* 게임 클리어 */
+.game-text-Completed{
+    position: absolute;
+    font-size: 45px;
+    color: #fff;
+    display: none;
+    font-weight: bold;
+    text-shadow: 0px 5px 10px rgb(37, 60, 63);
+}
+
+.game-text-Fall{
+    position: absolute;
+    font-size: 45px;
+    color: #fff;
+    display: none;
+    font-weight: bold;    
+}
+
+/* 타일 */
+.list0{
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+.list1{
+    background-position-x: -100px;
+    background-position-y: 0px;
+}
+.list2{
+    background-position-x: -200px;
+    background-position-y: 0px;
+}
+.list3{
+    background-position-x: -300px;
+    background-position-y: 0px;
+}
+.list4{
+    background-position-x: 0px;
+    background-position-y: -100px;
+}
+.list5{
+    background-position-x: -100px;
+    background-position-y: -100px;
+}
+.list6{
+    background-position-x: -200px;
+    background-position-y: -100px;
+}
+.list7{
+    background-position-x: -300px;
+    background-position-y: -100px;
+}
+.list8{
+    background-position-x: 0px;
+    background-position-y: -200px;
+}
+.list9{
+    background-position-x: -100px;
+    background-position-y: -200px;
+}
+.list10{
+    background-position-x: -200px;
+    background-position-y: -200px;
+}
+.list11{
+    background-position-x: -300px;
+    background-position-y: -200px;
+}
+.list12{
+    background-position-x: 0px;
+    background-position-y: -300px;
+}
+.list13{
+    background-position-x: -100px;
+    background-position-y: -300px;
+}
+.list14{
+    background-position-x: -200px;
+    background-position-y: -300px;
+}
+.list15{
+    background-position-x: -300px;
+    background-position-y: -300px;
+}
+
