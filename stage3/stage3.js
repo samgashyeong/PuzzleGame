@@ -52,7 +52,7 @@ function setGame(){
     tiles.forEach(tile=>container.appendChild(tile));
     setTimeout(()=>{
         container.innerHTML = "";
-        shuffle(tiles).forEach(tile => container.appendChild(tile));
+        tiles.forEach(tile=>container.appendChild(tile));
         timeInterval = setInterval(()=>{
             playTime.innerText = Math.floor(time*100)/100;
             time.toFixed(2);
